@@ -21,12 +21,9 @@ public class Main {
         String[] newArray = {"fib", "fb", "fix"};
         String[] response = {"", "", ""};
         for(int i=0; i< newArray.length; i++) {
-            if(newArray[i].startsWith("f") &&  (!newArray[i].endsWith("b"))) response[i] = "Fizz";
-            if(newArray[i].endsWith("b") &&  (!newArray[i].startsWith("f"))) response[i] = "Buzz";
-            if (newArray[i].startsWith("f") && newArray[i].endsWith("b")) response[i] = "FizzBuzz";
+           response[i] = fizzBuzzString(newArray[i]);
         }
         return response;
-
     }
 
 }

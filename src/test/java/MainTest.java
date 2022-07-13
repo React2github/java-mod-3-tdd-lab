@@ -35,6 +35,13 @@ class MainTest {
     }
 
     @Test
+    void fizzBuzzArraysForNull() {
+        String[] resultsArr = Main.fizzBuzzArrays();
+        String[] expectedArr = {null, null, null};
+        assertArrayEquals(expectedArr, resultsArr);
+    }
+
+    @Test
     void fizzBuzzArrays() {
         String[] resultsArr = Main.fizzBuzzArrays();
         String[] expectedArr = {"FizzBuzz","FizzBuzz","Fizz"};
