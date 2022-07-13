@@ -34,9 +34,10 @@ class MainTest {
         assertEquals("FizzBuzz", response);
     }
 
-    // @Test
-    // void fizzBuzzArray() {
-    // Array resultsArr = 
-    // assertArrayEquals(expectedArr.toArray(), resultsArr.toArray());
-    // }
+    @Test
+    void fizzBuzzArrays() {
+        String[] resultsArr = Main.fizzBuzzArrays();
+        String[] expectedArr = {"FizzBuzz","FizzBuzz","Fizz"};
+    assertArrayEquals(expectedArr, resultsArr);
+    }
 }
